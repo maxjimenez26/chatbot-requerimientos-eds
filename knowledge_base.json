@@ -1,0 +1,3010 @@
+{
+  "meta": {
+    "name": "EDS design rules and requirements - synthetic knowledge base",
+    "version": "1.1",
+    "language_of_content": "en",
+    "languages_supported": [
+      "es",
+      "en"
+    ],
+    "notice": "Synthetic data for academic use. Identifiers, texts and values are fictional and do not represent actual requirements. Verify any real requirement in the official source. Authors, approvers and deviation methods are fictional.",
+    "collections": [
+      "Retention and Clips",
+      "Protection and Edges",
+      "Routing and Clearance",
+      "Grommets and Holes",
+      "Grounding",
+      "Connectors and Sealing",
+      "Splices and Terminals",
+      "Fuses and Circuit Protection",
+      "Heat and Environment",
+      "High Voltage and Shielding"
+    ],
+    "counts": {
+      "design_rules": 30,
+      "requirements": 40
+    },
+    "hierarchy_note": "A Requirement (mandatory, 'shall') takes precedence over a Design Rule (recommended, 'should') when both apply. Priority (Primary, Secondary, Tertiary) ranks importance inside each type."
+  },
+  "records": [
+    {
+      "id": "DEMO-DR-001",
+      "type": "Design Rule",
+      "title": "Clip and retainer selection",
+      "collection": "Retention and Clips",
+      "priority": "Primary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Choose the clip family that matches bundle diameter and mounting feature.",
+      "rule_text": "Select the clip or retainer according to bundle diameter and the type of mounting hole or stud. Do not use a clip outside its rated bundle range.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed, but notify the rule owner because the priority is Primary.",
+        "approver": "EDS technical specialist",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "clip",
+        "clips",
+        "retainer",
+        "retainers",
+        "selection",
+        "mounting",
+        "stud",
+        "hole"
+      ],
+      "keywords_es": [
+        "clip",
+        "clips",
+        "retenedor",
+        "retenedores",
+        "sujetador",
+        "sujetadores",
+        "seleccion",
+        "montaje"
+      ],
+      "related_ids": [
+        "DEMO-DR-002",
+        "DEMO-DR-021",
+        "DEMO-RQT-032"
+      ]
+    },
+    {
+      "id": "DEMO-DR-002",
+      "type": "Design Rule",
+      "title": "Offset clips need surface support under the harness",
+      "collection": "Retention and Clips",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Offset clips must rest on a surface under the bundle.",
+      "rule_text": "An offset clip must be supported by a flat surface directly under the harness so the bundle cannot hang from the clip arm. If no surface is available, use a clip without offset.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "offset",
+        "clip",
+        "clips",
+        "support",
+        "surface",
+        "under",
+        "harness"
+      ],
+      "keywords_es": [
+        "clip",
+        "clips",
+        "desfasado",
+        "soporte",
+        "superficie",
+        "debajo",
+        "arnes"
+      ],
+      "related_ids": [
+        "DEMO-DR-001",
+        "DEMO-DR-022"
+      ]
+    },
+    {
+      "id": "DEMO-DR-003",
+      "type": "Design Rule",
+      "title": "Tie-strap retainer installation",
+      "collection": "Retention and Clips",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Close the strap around the bundle without pinching wires.",
+      "rule_text": "Tighten the strap until the bundle is held without deforming the insulation. The strap head must face away from moving parts.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "tie",
+        "strap",
+        "tie-strap",
+        "cable",
+        "tie",
+        "retainer",
+        "install",
+        "installation"
+      ],
+      "keywords_es": [
+        "cincho",
+        "cinchos",
+        "sujetador",
+        "instalacion",
+        "amarre"
+      ],
+      "related_ids": [
+        "DEMO-DR-004",
+        "DEMO-DR-023",
+        "DEMO-RQT-011"
+      ]
+    },
+    {
+      "id": "DEMO-DR-004",
+      "type": "Design Rule",
+      "title": "Tie straps and relative motion",
+      "collection": "Retention and Clips",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Do not use tie straps where parts move relative to each other.",
+      "rule_text": "Where the harness and its mounting point move relative to each other, use a clip that allows movement or a dynamic loop. A tight strap in these zones causes wear.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "tie",
+        "strap",
+        "relative",
+        "motion",
+        "movement",
+        "dynamic",
+        "wear"
+      ],
+      "keywords_es": [
+        "cincho",
+        "movimiento",
+        "relativo",
+        "dinamico",
+        "desgaste"
+      ],
+      "related_ids": [
+        "DEMO-DR-003",
+        "DEMO-DR-010",
+        "DEMO-RQT-003"
+      ]
+    },
+    {
+      "id": "DEMO-DR-005",
+      "type": "Design Rule",
+      "title": "Minimum bend radius",
+      "collection": "Routing and Clearance",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Keep bends above the minimum radius for the bundle.",
+      "rule_text": "The inside bend radius must not be smaller than 3 times the outer diameter of the bundle (illustrative). Do not place a bend within 50 mm of a connector back (illustrative).",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "bend",
+        "radius",
+        "bending",
+        "minimum",
+        "bundle"
+      ],
+      "keywords_es": [
+        "radio",
+        "curvatura",
+        "doblez",
+        "curva",
+        "minimo"
+      ],
+      "related_ids": [
+        "DEMO-DR-016",
+        "DEMO-DR-019"
+      ]
+    },
+    {
+      "id": "DEMO-DR-006",
+      "type": "Design Rule",
+      "title": "Protection at sheet-metal hole edges",
+      "collection": "Protection and Edges",
+      "priority": "Primary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 02 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Hole edges crossed by wiring must be protected.",
+      "rule_text": "Any sheet-metal hole edge crossed by wiring must have a grommet, an edge protector or a rolled edge. Bare cut edges are not accepted.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed, but notify the rule owner because the priority is Primary.",
+        "approver": "EDS technical specialist",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "sheet",
+        "metal",
+        "hole",
+        "edge",
+        "edges",
+        "protection",
+        "protector",
+        "grommet",
+        "bare"
+      ],
+      "keywords_es": [
+        "lamina",
+        "orificio",
+        "borde",
+        "bordes",
+        "proteccion",
+        "protector"
+      ],
+      "related_ids": [
+        "DEMO-DR-007",
+        "DEMO-RQT-004"
+      ]
+    },
+    {
+      "id": "DEMO-DR-007",
+      "type": "Design Rule",
+      "title": "Rolled sharp edges on brackets near wiring",
+      "collection": "Protection and Edges",
+      "priority": "Primary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 02 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Brackets near the harness need rolled or covered edges.",
+      "rule_text": "Edges of brackets that can contact the harness must be rolled, deburred or covered with an edge protector. Minimum clearance to an unprotected sharp edge (illustrative): 10 mm.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed, but notify the rule owner because the priority is Primary.",
+        "approver": "EDS technical specialist",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "bracket",
+        "brackets",
+        "sharp",
+        "edge",
+        "edges",
+        "rolled",
+        "deburred",
+        "clearance",
+        "contact",
+        "harness",
+        "wiring"
+      ],
+      "keywords_es": [
+        "soporte",
+        "soportes",
+        "borde",
+        "bordes",
+        "filoso",
+        "filosos",
+        "filo",
+        "rebabas",
+        "holgura",
+        "contacto",
+        "arnes",
+        "cableado"
+      ],
+      "related_ids": [
+        "DEMO-DR-006",
+        "DEMO-RQT-004"
+      ]
+    },
+    {
+      "id": "DEMO-DR-008",
+      "type": "Design Rule",
+      "title": "Grommet usage in harness assemblies",
+      "collection": "Grommets and Holes",
+      "priority": "Primary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 04 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Use a grommet wherever the harness crosses a panel.",
+      "rule_text": "Where the harness passes through a panel, use a grommet sized for the bundle and the hole. The grommet must be fully seated with the sealing lip on the wet side.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed, but notify the rule owner because the priority is Primary.",
+        "approver": "EDS technical specialist",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "grommet",
+        "grommets",
+        "panel",
+        "pass-through",
+        "seal",
+        "hole",
+        "usage"
+      ],
+      "keywords_es": [
+        "grommet",
+        "pasacable",
+        "pasacables",
+        "pasamuro",
+        "panel",
+        "sello",
+        "orificio"
+      ],
+      "related_ids": [
+        "DEMO-DR-009",
+        "DEMO-DR-010",
+        "DEMO-RQT-005",
+        "DEMO-RQT-027"
+      ]
+    },
+    {
+      "id": "DEMO-DR-009",
+      "type": "Design Rule",
+      "title": "Grommet-to-wire taping",
+      "collection": "Grommets and Holes",
+      "priority": "Tertiary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 04 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Tape the harness at the grommet so it cannot slide.",
+      "rule_text": "Apply a tape wrap on both sides of the grommet to hold it in position. The wrap must cover the grommet neck without overlapping the sealing lip.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Team lead",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "grommet",
+        "tape",
+        "taping",
+        "wire",
+        "slide",
+        "position",
+        "wrap"
+      ],
+      "keywords_es": [
+        "grommet",
+        "cinta",
+        "encintado",
+        "deslizar",
+        "posicion"
+      ],
+      "related_ids": [
+        "DEMO-DR-008",
+        "DEMO-RQT-006"
+      ]
+    },
+    {
+      "id": "DEMO-DR-010",
+      "type": "Design Rule",
+      "title": "Dynamic loop grommets",
+      "collection": "Grommets and Holes",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 04 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Grommets in dynamic loops must allow rotation.",
+      "rule_text": "In a dynamic loop, the grommet must tolerate the specified rotation of the harness without twisting the wires. Use a grommet with a flexible neck.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "dynamic",
+        "loop",
+        "grommet",
+        "rotation",
+        "door",
+        "hinge",
+        "flex"
+      ],
+      "keywords_es": [
+        "lazo",
+        "dinamico",
+        "grommet",
+        "rotacion",
+        "puerta",
+        "bisagra",
+        "flexion"
+      ],
+      "related_ids": [
+        "DEMO-DR-004",
+        "DEMO-RQT-003",
+        "DEMO-RQT-006"
+      ]
+    },
+    {
+      "id": "DEMO-DR-011",
+      "type": "Design Rule",
+      "title": "Ground eyelet clearance to bundles",
+      "collection": "Grounding",
+      "priority": "Primary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 05 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Keep ground eyelets away from other bundles.",
+      "rule_text": "A ground eyelet must keep a minimum clearance to neighboring bundles so the fastening tool does not damage them. Illustrative minimum: 15 mm.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed, but notify the rule owner because the priority is Primary.",
+        "approver": "EDS technical specialist",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "ground",
+        "eyelet",
+        "eyelets",
+        "clearance",
+        "bundle",
+        "bundles",
+        "fastener",
+        "tool"
+      ],
+      "keywords_es": [
+        "tierra",
+        "ojillo",
+        "terminal",
+        "ojo",
+        "holgura",
+        "mazo",
+        "mazos",
+        "herramienta"
+      ],
+      "related_ids": [
+        "DEMO-RQT-028",
+        "DEMO-DR-029",
+        "DEMO-RQT-017"
+      ]
+    },
+    {
+      "id": "DEMO-DR-012",
+      "type": "Design Rule",
+      "title": "Clearance to fluid-related maintenance items",
+      "collection": "Routing and Clearance",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Keep wiring away from fill and drain points.",
+      "rule_text": "Wiring must not be routed within the spill zone of filler caps, drain plugs or dipsticks. Illustrative minimum clearance: 30 mm.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "fluid",
+        "fluids",
+        "maintenance",
+        "filler",
+        "cap",
+        "drain",
+        "dipstick",
+        "clearance",
+        "spill"
+      ],
+      "keywords_es": [
+        "fluido",
+        "fluidos",
+        "mantenimiento",
+        "tapon",
+        "llenado",
+        "drenaje",
+        "varilla",
+        "holgura",
+        "derrame"
+      ],
+      "related_ids": [
+        "DEMO-DR-013",
+        "DEMO-RQT-002"
+      ]
+    },
+    {
+      "id": "DEMO-DR-013",
+      "type": "Design Rule",
+      "title": "Wire routing near fluid lines",
+      "collection": "Routing and Clearance",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Route the harness above and away from fluid lines.",
+      "rule_text": "Where the harness runs close to fluid lines, place it above the lines when possible and keep a minimum clearance of 25 mm (illustrative).",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "fluid",
+        "line",
+        "lines",
+        "hose",
+        "hoses",
+        "fuel",
+        "brake",
+        "routing",
+        "near",
+        "clearance"
+      ],
+      "keywords_es": [
+        "linea",
+        "lineas",
+        "fluido",
+        "manguera",
+        "mangueras",
+        "combustible",
+        "freno",
+        "ruteo",
+        "holgura"
+      ],
+      "related_ids": [
+        "DEMO-DR-012",
+        "DEMO-RQT-002"
+      ]
+    },
+    {
+      "id": "DEMO-DR-014",
+      "type": "Design Rule",
+      "title": "High-voltage circuit covering and identification",
+      "collection": "High Voltage and Shielding",
+      "priority": "Primary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 10 (EDS Engineering)",
+      "revision": "A",
+      "summary": "High-voltage circuits are covered and recognizable.",
+      "rule_text": "All high-voltage circuits must be covered with orange sheathing or tape along their full visible length so service personnel can recognize them.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed, but notify the rule owner because the priority is Primary.",
+        "approver": "EDS technical specialist",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "high",
+        "voltage",
+        "HV",
+        "orange",
+        "cover",
+        "covering",
+        "tape",
+        "identification",
+        "sheathing"
+      ],
+      "keywords_es": [
+        "alto",
+        "voltaje",
+        "HV",
+        "naranja",
+        "cubierta",
+        "cinta",
+        "identificacion"
+      ],
+      "related_ids": [
+        "DEMO-RQT-039",
+        "DEMO-RQT-026"
+      ]
+    },
+    {
+      "id": "DEMO-DR-015",
+      "type": "Design Rule",
+      "title": "Sealed splices in interior areas",
+      "collection": "Splices and Terminals",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 07 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Splices inside the cabin must be sealed.",
+      "rule_text": "Splices located in the vehicle interior must be sealed with adhesive-lined heat shrink so moisture cannot travel along the conductors.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "splice",
+        "splices",
+        "sealed",
+        "interior",
+        "cabin",
+        "heat",
+        "shrink",
+        "moisture"
+      ],
+      "keywords_es": [
+        "empalme",
+        "empalmes",
+        "sellado",
+        "interior",
+        "cabina",
+        "termocontraible",
+        "humedad"
+      ],
+      "related_ids": [
+        "DEMO-RQT-021",
+        "DEMO-DR-020"
+      ]
+    },
+    {
+      "id": "DEMO-DR-016",
+      "type": "Design Rule",
+      "title": "Taping at the back of connectors",
+      "collection": "Connectors and Sealing",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Tape the harness behind connectors to protect the exit.",
+      "rule_text": "Apply tape from the strain-relief end of the connector and over the first 20 mm (illustrative) of the bundle to protect the wires at the exit.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "connector",
+        "tape",
+        "taping",
+        "back",
+        "strain",
+        "relief",
+        "exit"
+      ],
+      "keywords_es": [
+        "conector",
+        "cinta",
+        "encintado",
+        "parte",
+        "trasera",
+        "alivio",
+        "tension",
+        "salida"
+      ],
+      "related_ids": [
+        "DEMO-DR-017",
+        "DEMO-RQT-024",
+        "DEMO-RQT-025"
+      ]
+    },
+    {
+      "id": "DEMO-DR-017",
+      "type": "Design Rule",
+      "title": "Retainers on hardshell connectors",
+      "collection": "Connectors and Sealing",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Hardshell connectors need their own retainer.",
+      "rule_text": "Hardshell connectors must be held by a retainer or bracket designed for the housing. Do not rely on bundle clips to carry the connector weight.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "hardshell",
+        "connector",
+        "connectors",
+        "retainer",
+        "bracket",
+        "housing",
+        "weight"
+      ],
+      "keywords_es": [
+        "conector",
+        "carcasa",
+        "rigida",
+        "retenedor",
+        "soporte",
+        "peso"
+      ],
+      "related_ids": [
+        "DEMO-DR-016",
+        "DEMO-RQT-013"
+      ]
+    },
+    {
+      "id": "DEMO-DR-018",
+      "type": "Design Rule",
+      "title": "Retention and routing for high-severity circuits",
+      "collection": "Retention and Clips",
+      "priority": "Primary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "High-severity circuits need tighter retention.",
+      "rule_text": "Circuits classified as high severity must be retained at shorter intervals than standard circuits (illustrative: every 100 mm) and routed away from moving parts.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed, but notify the rule owner because the priority is Primary.",
+        "approver": "EDS technical specialist",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "severity",
+        "high",
+        "retention",
+        "routing",
+        "circuits",
+        "safety",
+        "critical",
+        "clip",
+        "spacing"
+      ],
+      "keywords_es": [
+        "severidad",
+        "alta",
+        "retencion",
+        "ruteo",
+        "circuitos",
+        "seguridad",
+        "critico",
+        "espaciado"
+      ],
+      "related_ids": [
+        "DEMO-DR-021",
+        "DEMO-RQT-012"
+      ]
+    },
+    {
+      "id": "DEMO-DR-019",
+      "type": "Design Rule",
+      "title": "Excess wiring for assembly routing",
+      "collection": "Routing and Clearance",
+      "priority": "Tertiary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Leave controlled slack for assembly.",
+      "rule_text": "A controlled extra length (illustrative: 50 mm) is allowed at the harness ends to ease installation. The excess must be tucked away from edges and moving parts.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Team lead",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "excess",
+        "slack",
+        "extra",
+        "length",
+        "assembly",
+        "routing",
+        "hanging"
+      ],
+      "keywords_es": [
+        "exceso",
+        "holgura",
+        "longitud",
+        "extra",
+        "ensamble",
+        "ruteo"
+      ],
+      "related_ids": [
+        "DEMO-DR-005",
+        "DEMO-RQT-002"
+      ]
+    },
+    {
+      "id": "DEMO-DR-020",
+      "type": "Design Rule",
+      "title": "Heat-shrink length at eyelets",
+      "collection": "Splices and Terminals",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 07 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Cover the eyelet barrel completely with heat shrink.",
+      "rule_text": "Heat shrink at an eyelet must cover the crimp barrel and extend over the wire insulation by at least 10 mm (illustrative).",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "heat",
+        "shrink",
+        "heatshrink",
+        "eyelet",
+        "barrel",
+        "crimp",
+        "length"
+      ],
+      "keywords_es": [
+        "termocontraible",
+        "ojillo",
+        "terminal",
+        "crimpado",
+        "longitud"
+      ],
+      "related_ids": [
+        "DEMO-DR-011",
+        "DEMO-DR-015"
+      ]
+    },
+    {
+      "id": "DEMO-DR-021",
+      "type": "Design Rule",
+      "title": "Clip spacing on straight runs",
+      "collection": "Retention and Clips",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Space clips evenly along straight sections.",
+      "rule_text": "On straight sections the maximum distance between clips is 200 mm (illustrative). Add a clip within 80 mm of any branch point or connector.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "clip",
+        "clips",
+        "spacing",
+        "distance",
+        "straight",
+        "run",
+        "interval",
+        "maximum"
+      ],
+      "keywords_es": [
+        "clip",
+        "clips",
+        "espaciado",
+        "distancia",
+        "tramo",
+        "recto",
+        "intervalo",
+        "maximo"
+      ],
+      "related_ids": [
+        "DEMO-DR-001",
+        "DEMO-DR-018",
+        "DEMO-RQT-032"
+      ]
+    },
+    {
+      "id": "DEMO-DR-022",
+      "type": "Design Rule",
+      "title": "Clip orientation against vibration",
+      "collection": "Retention and Clips",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Orient clips so the harness cannot slip out.",
+      "rule_text": "Install clips with the opening facing away from the direction of gravity and main vibration. The opening must not face a moving part.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "clip",
+        "clips",
+        "orientation",
+        "opening",
+        "vibration",
+        "gravity",
+        "install"
+      ],
+      "keywords_es": [
+        "clip",
+        "clips",
+        "orientacion",
+        "apertura",
+        "vibracion",
+        "gravedad",
+        "instalacion"
+      ],
+      "related_ids": [
+        "DEMO-DR-002",
+        "DEMO-DR-021"
+      ]
+    },
+    {
+      "id": "DEMO-DR-023",
+      "type": "Design Rule",
+      "title": "Cable tie tail trimming",
+      "collection": "Retention and Clips",
+      "priority": "Tertiary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Trim cable tie tails flush.",
+      "rule_text": "After tightening, trim the tail so no sharp tip remains. The trimmed tail must be shorter than 2 mm (illustrative) and must not point at the harness.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Team lead",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "cable",
+        "tie",
+        "tail",
+        "trim",
+        "cut",
+        "sharp",
+        "tip"
+      ],
+      "keywords_es": [
+        "cincho",
+        "cola",
+        "recorte",
+        "corte",
+        "punta",
+        "filosa"
+      ],
+      "related_ids": [
+        "DEMO-DR-003",
+        "DEMO-RQT-031"
+      ]
+    },
+    {
+      "id": "DEMO-DR-024",
+      "type": "Design Rule",
+      "title": "Corrugated tubing at sharp-edge zones",
+      "collection": "Protection and Edges",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 02 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Use corrugated tubing where an edge cannot be removed.",
+      "rule_text": "When a sharp edge cannot be rolled or covered, protect the harness with split corrugated tubing over the whole contact zone, extended 25 mm beyond it (illustrative).",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "corrugated",
+        "convoluted",
+        "tubing",
+        "conduit",
+        "sharp",
+        "edge",
+        "protection",
+        "split",
+        "zone"
+      ],
+      "keywords_es": [
+        "corrugado",
+        "tubo",
+        "flexible",
+        "conduit",
+        "borde",
+        "filoso",
+        "proteccion",
+        "zona"
+      ],
+      "related_ids": [
+        "DEMO-DR-007",
+        "DEMO-DR-006",
+        "DEMO-RQT-031"
+      ]
+    },
+    {
+      "id": "DEMO-DR-025",
+      "type": "Design Rule",
+      "title": "Tape wrap overlap",
+      "collection": "Protection and Edges",
+      "priority": "Tertiary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 02 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Overlap spiral tape by half its width.",
+      "rule_text": "Spiral wraps must overlap by about 50 % of the tape width and be applied with constant tension and no gaps.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Team lead",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "tape",
+        "wrap",
+        "overlap",
+        "spiral",
+        "tension",
+        "gap"
+      ],
+      "keywords_es": [
+        "cinta",
+        "encintado",
+        "traslape",
+        "espiral",
+        "tension",
+        "hueco"
+      ],
+      "related_ids": [
+        "DEMO-DR-016",
+        "DEMO-DR-009"
+      ]
+    },
+    {
+      "id": "DEMO-DR-026",
+      "type": "Design Rule",
+      "title": "Clearance to moving suspension parts",
+      "collection": "Routing and Clearance",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Keep the harness away from suspension motion.",
+      "rule_text": "Maintain at least 25 mm (illustrative) between the harness and any suspension component through the full suspension travel.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "suspension",
+        "travel",
+        "moving",
+        "clearance",
+        "spring",
+        "damper",
+        "wheel"
+      ],
+      "keywords_es": [
+        "suspension",
+        "recorrido",
+        "movimiento",
+        "holgura",
+        "resorte",
+        "amortiguador",
+        "rueda"
+      ],
+      "related_ids": [
+        "DEMO-RQT-001",
+        "DEMO-RQT-034"
+      ]
+    },
+    {
+      "id": "DEMO-DR-027",
+      "type": "Design Rule",
+      "title": "Clearance to exhaust components",
+      "collection": "Heat and Environment",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 09 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Keep unshielded wiring away from exhaust parts.",
+      "rule_text": "Without a heat shield, the harness must stay at least 50 mm (illustrative) from exhaust pipes and catalytic converters. With a verified shield this may be reduced to 25 mm.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "exhaust",
+        "heat",
+        "shield",
+        "clearance",
+        "pipe",
+        "catalytic",
+        "hot",
+        "temperature"
+      ],
+      "keywords_es": [
+        "escape",
+        "calor",
+        "escudo",
+        "termico",
+        "holgura",
+        "tubo",
+        "catalizador",
+        "caliente",
+        "temperatura"
+      ],
+      "related_ids": [
+        "DEMO-RQT-007",
+        "DEMO-RQT-035"
+      ]
+    },
+    {
+      "id": "DEMO-DR-028",
+      "type": "Design Rule",
+      "title": "Connector orientation to avoid water pooling",
+      "collection": "Connectors and Sealing",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Orient connectors so water drains away.",
+      "rule_text": "Install connectors with the opening pointing downward or sideways. Never mount a connector with its mating face pointing upward in a wet zone.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "connector",
+        "orientation",
+        "water",
+        "pooling",
+        "drain",
+        "wet",
+        "zone",
+        "face",
+        "downward"
+      ],
+      "keywords_es": [
+        "conector",
+        "orientacion",
+        "agua",
+        "acumulacion",
+        "drenaje",
+        "zona",
+        "humeda",
+        "cara"
+      ],
+      "related_ids": [
+        "DEMO-RQT-009",
+        "DEMO-RQT-010"
+      ]
+    },
+    {
+      "id": "DEMO-DR-029",
+      "type": "Design Rule",
+      "title": "Ground eyelet stack-up on a stud",
+      "collection": "Grounding",
+      "priority": "Secondary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 05 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Stack ground eyelets in a controlled order.",
+      "rule_text": "When several eyelets share a stud, the largest conductor goes on the bottom. Limit the stack to 3 eyelets per stud (illustrative).",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Design supervisor",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "ground",
+        "eyelet",
+        "eyelets",
+        "stack",
+        "stud",
+        "order",
+        "multiple"
+      ],
+      "keywords_es": [
+        "tierra",
+        "ojillo",
+        "ojillos",
+        "pila",
+        "perno",
+        "orden",
+        "multiples"
+      ],
+      "related_ids": [
+        "DEMO-DR-011",
+        "DEMO-RQT-017"
+      ]
+    },
+    {
+      "id": "DEMO-DR-030",
+      "type": "Design Rule",
+      "title": "Branch identification labels",
+      "collection": "Routing and Clearance",
+      "priority": "Tertiary",
+      "requirement_level": "Recommended (should)",
+      "precedence": 2,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Place labels where they can be read after installation.",
+      "rule_text": "Labels must be placed on the branch near the connector, facing the service access, and kept clear of clips, tape and grommets.",
+      "deviation": {
+        "allowed": true,
+        "method": "Document the rationale in the design review. No formal request is needed.",
+        "approver": "Team lead",
+        "evidence": "Design review record with the reason for not following the rule"
+      },
+      "keywords_en": [
+        "label",
+        "labels",
+        "branch",
+        "identification",
+        "marking",
+        "readable",
+        "service"
+      ],
+      "keywords_es": [
+        "etiqueta",
+        "etiquetas",
+        "ramal",
+        "identificacion",
+        "marcado",
+        "legible",
+        "servicio"
+      ],
+      "related_ids": [
+        "DEMO-DR-016",
+        "DEMO-DR-017"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-001",
+      "type": "Requirement",
+      "title": "Routing clearance to dynamic components",
+      "collection": "Routing and Clearance",
+      "priority": "Primary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "The harness must keep clearance to dynamic parts.",
+      "rule_text": "Throughout the full range of motion of a dynamic component, the harness must keep at least 20 mm clearance (illustrative) and must never be pinched.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "EDS technical specialist",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "routing",
+        "clearance",
+        "dynamic",
+        "moving",
+        "component",
+        "range",
+        "of",
+        "motion",
+        "pinch"
+      ],
+      "keywords_es": [
+        "ruteo",
+        "holgura",
+        "dinamico",
+        "movimiento",
+        "componente",
+        "rango",
+        "pellizco"
+      ],
+      "related_ids": [
+        "DEMO-DR-026",
+        "DEMO-RQT-034",
+        "DEMO-RQT-003"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-002",
+      "type": "Requirement",
+      "title": "Static routing clearance",
+      "collection": "Routing and Clearance",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Static routing needs a minimum clearance to adjacent parts.",
+      "rule_text": "In static conditions, keep at least 10 mm (illustrative) between the harness tolerance envelope and any adjacent part.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "static",
+        "routing",
+        "clearance",
+        "envelope",
+        "tolerance",
+        "adjacent"
+      ],
+      "keywords_es": [
+        "estatico",
+        "ruteo",
+        "holgura",
+        "envolvente",
+        "tolerancia",
+        "adyacente"
+      ],
+      "related_ids": [
+        "DEMO-DR-012",
+        "DEMO-DR-013",
+        "DEMO-DR-019"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-003",
+      "type": "Requirement",
+      "title": "Dynamic loop retention",
+      "collection": "Routing and Clearance",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Dynamic loops must be retained at both ends.",
+      "rule_text": "Each end of a dynamic loop must be retained so the bend stays inside the designed zone throughout the motion.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "dynamic",
+        "loop",
+        "retention",
+        "retained",
+        "ends",
+        "motion",
+        "door"
+      ],
+      "keywords_es": [
+        "lazo",
+        "dinamico",
+        "retencion",
+        "extremos",
+        "movimiento",
+        "puerta"
+      ],
+      "related_ids": [
+        "DEMO-DR-010",
+        "DEMO-DR-004",
+        "DEMO-RQT-001"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-004",
+      "type": "Requirement",
+      "title": "Grommet hole edges",
+      "collection": "Grommets and Holes",
+      "priority": "Primary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 04 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Grommet holes must have clean edges.",
+      "rule_text": "The edge of a hole that receives a grommet must be free of burrs and sharp corners so the grommet lip is not cut during installation.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "EDS technical specialist",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "grommet",
+        "hole",
+        "edge",
+        "edges",
+        "burr",
+        "burrs",
+        "sharp",
+        "corner",
+        "lip"
+      ],
+      "keywords_es": [
+        "grommet",
+        "orificio",
+        "borde",
+        "bordes",
+        "rebaba",
+        "filosa",
+        "esquina",
+        "labio"
+      ],
+      "related_ids": [
+        "DEMO-RQT-005",
+        "DEMO-RQT-027",
+        "DEMO-DR-006"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-005",
+      "type": "Requirement",
+      "title": "Flanged grommet holes",
+      "collection": "Grommets and Holes",
+      "priority": "Tertiary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 04 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Thin panels need a flange around the grommet hole.",
+      "rule_text": "On thin panels, form a flange around the hole to give the grommet a stable seat and keep the edge away from the wiring.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Team lead",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "flanged",
+        "flange",
+        "grommet",
+        "hole",
+        "thin",
+        "panel",
+        "seat"
+      ],
+      "keywords_es": [
+        "bridado",
+        "brida",
+        "grommet",
+        "orificio",
+        "panel",
+        "delgado",
+        "asiento"
+      ],
+      "related_ids": [
+        "DEMO-RQT-004",
+        "DEMO-RQT-027"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-006",
+      "type": "Requirement",
+      "title": "Grommet installation force (push-to-seat)",
+      "collection": "Grommets and Holes",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 04 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Push-to-seat grommets have a force limit.",
+      "rule_text": "The force needed to install a push-to-seat grommet by hand must not exceed 90 N (illustrative).",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "grommet",
+        "installation",
+        "force",
+        "push",
+        "seat",
+        "hand",
+        "effort",
+        "newton"
+      ],
+      "keywords_es": [
+        "grommet",
+        "instalacion",
+        "fuerza",
+        "empujar",
+        "mano",
+        "esfuerzo",
+        "newton"
+      ],
+      "related_ids": [
+        "DEMO-RQT-011",
+        "DEMO-DR-008"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-007",
+      "type": "Requirement",
+      "title": "Heat protection and material temperatures",
+      "collection": "Heat and Environment",
+      "priority": "Primary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 09 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Harness materials must tolerate the local temperature.",
+      "rule_text": "Materials used in a zone must be rated at least 15 °C (illustrative) above the maximum temperature of that zone. Add heat sleeves where this margin cannot be met.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "EDS technical specialist",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "heat",
+        "temperature",
+        "material",
+        "rating",
+        "protection",
+        "sleeve",
+        "zone",
+        "thermal"
+      ],
+      "keywords_es": [
+        "calor",
+        "temperatura",
+        "material",
+        "clasificacion",
+        "proteccion",
+        "funda",
+        "zona",
+        "termica"
+      ],
+      "related_ids": [
+        "DEMO-DR-027",
+        "DEMO-RQT-035"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-008",
+      "type": "Requirement",
+      "title": "Stone and road-debris protection",
+      "collection": "Heat and Environment",
+      "priority": "Tertiary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 09 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Underbody harness needs protection from road debris.",
+      "rule_text": "Harness sections exposed to stone impact must be covered with a protector rated for impact.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Team lead",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "stone",
+        "road",
+        "debris",
+        "underbody",
+        "impact",
+        "protection",
+        "cover",
+        "gravel"
+      ],
+      "keywords_es": [
+        "piedra",
+        "grava",
+        "escombros",
+        "bajo",
+        "chasis",
+        "impacto",
+        "proteccion",
+        "cubierta"
+      ],
+      "related_ids": [
+        "DEMO-RQT-002",
+        "DEMO-RQT-007"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-009",
+      "type": "Requirement",
+      "title": "Connector sealing classification",
+      "collection": "Connectors and Sealing",
+      "priority": "Primary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Each connector has a sealing class by location.",
+      "rule_text": "Connectors must be assigned a sealing class (sealed or unsealed) according to whether their location is wet or dry.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "EDS technical specialist",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "connector",
+        "sealing",
+        "class",
+        "sealed",
+        "unsealed",
+        "wet",
+        "dry",
+        "location",
+        "ingress"
+      ],
+      "keywords_es": [
+        "conector",
+        "sellado",
+        "clase",
+        "sellado",
+        "no",
+        "sellado",
+        "humedo",
+        "seco",
+        "ubicacion"
+      ],
+      "related_ids": [
+        "DEMO-DR-028",
+        "DEMO-RQT-010"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-010",
+      "type": "Requirement",
+      "title": "Water management",
+      "collection": "Heat and Environment",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 09 (EDS Engineering)",
+      "revision": "A",
+      "summary": "The harness must not guide water into the cabin.",
+      "rule_text": "Harness routing must include drip loops or low points that send water away from connectors and panel openings.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "water",
+        "management",
+        "drip",
+        "loop",
+        "drain",
+        "cabin",
+        "leak",
+        "moisture"
+      ],
+      "keywords_es": [
+        "agua",
+        "gestion",
+        "lazo",
+        "goteo",
+        "drenaje",
+        "cabina",
+        "fuga",
+        "humedad"
+      ],
+      "related_ids": [
+        "DEMO-RQT-009",
+        "DEMO-DR-028",
+        "DEMO-DR-008"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-011",
+      "type": "Requirement",
+      "title": "Retainer installation force (hand-installed)",
+      "collection": "Retention and Clips",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Hand-installed retainers have a force limit.",
+      "rule_text": "The installation force of a hand-installed clip or retainer must not exceed 60 N (illustrative).",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "retainer",
+        "clip",
+        "installation",
+        "force",
+        "hand",
+        "thumb",
+        "press",
+        "effort"
+      ],
+      "keywords_es": [
+        "retenedor",
+        "clip",
+        "instalacion",
+        "fuerza",
+        "mano",
+        "pulgar",
+        "esfuerzo"
+      ],
+      "related_ids": [
+        "DEMO-DR-001",
+        "DEMO-DR-003",
+        "DEMO-RQT-006"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-012",
+      "type": "Requirement",
+      "title": "Retention forces to be withstood",
+      "collection": "Retention and Clips",
+      "priority": "Primary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Retainers must withstand a minimum pull force.",
+      "rule_text": "Each clip or retainer must hold the harness under a pull load of 80 N (illustrative) without release or damage.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "EDS technical specialist",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "retention",
+        "force",
+        "pull",
+        "load",
+        "withstand",
+        "clip",
+        "retainer",
+        "strength"
+      ],
+      "keywords_es": [
+        "retencion",
+        "fuerza",
+        "tiron",
+        "carga",
+        "soportar",
+        "clip",
+        "retenedor",
+        "resistencia"
+      ],
+      "related_ids": [
+        "DEMO-DR-001",
+        "DEMO-RQT-032",
+        "DEMO-DR-018"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-013",
+      "type": "Requirement",
+      "title": "Connector storage and retention",
+      "collection": "Connectors and Sealing",
+      "priority": "Tertiary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Unmated connectors must be stored and held.",
+      "rule_text": "Connectors that are not mated during assembly must be stored on a holder so they do not hang from their wires.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Team lead",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "connector",
+        "storage",
+        "store",
+        "retention",
+        "unmated",
+        "hanging",
+        "holder"
+      ],
+      "keywords_es": [
+        "conector",
+        "almacenamiento",
+        "retencion",
+        "desconectado",
+        "colgando",
+        "soporte"
+      ],
+      "related_ids": [
+        "DEMO-DR-017",
+        "DEMO-RQT-030"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-014",
+      "type": "Requirement",
+      "title": "Terminal protection",
+      "collection": "Splices and Terminals",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 07 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Terminals must be protected from damage and contact.",
+      "rule_text": "Exposed terminals must be covered with a cap until mated to prevent bending, corrosion or short circuits.",
+      "deviation": {
+        "allowed": false,
+        "method": "No deviation permitted (safety or regulatory content). Ask the owner to change the requirement itself.",
+        "approver": "Requirement owner",
+        "evidence": "Not applicable"
+      },
+      "keywords_en": [
+        "terminal",
+        "terminals",
+        "protection",
+        "cover",
+        "cap",
+        "exposed",
+        "short"
+      ],
+      "keywords_es": [
+        "terminal",
+        "terminales",
+        "proteccion",
+        "cubierta",
+        "tapa",
+        "expuesto",
+        "corto"
+      ],
+      "related_ids": [
+        "DEMO-RQT-015",
+        "DEMO-DR-020"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-015",
+      "type": "Requirement",
+      "title": "Cross-connection prevention",
+      "collection": "Connectors and Sealing",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Similar connectors must not be mateable by mistake.",
+      "rule_text": "Connectors that sit close together and look alike must be keyed or color-coded so they cannot be crossed during assembly.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "cross",
+        "connection",
+        "keying",
+        "color",
+        "keyed",
+        "similar",
+        "connector",
+        "mistake",
+        "error-proofing"
+      ],
+      "keywords_es": [
+        "conexion",
+        "cruzada",
+        "llave",
+        "color",
+        "codificado",
+        "similar",
+        "conector",
+        "error"
+      ],
+      "related_ids": [
+        "DEMO-RQT-022",
+        "DEMO-RQT-030"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-016",
+      "type": "Requirement",
+      "title": "Ground location outside wet zones",
+      "collection": "Grounding",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 05 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Place ground points outside wet zones.",
+      "rule_text": "Ground points should be located outside zones exposed to water. If this is unavoidable, they must be sealed and protected.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "ground",
+        "grounding",
+        "point",
+        "location",
+        "wet",
+        "zone",
+        "water",
+        "outside"
+      ],
+      "keywords_es": [
+        "tierra",
+        "punto",
+        "ubicacion",
+        "zona",
+        "humeda",
+        "agua",
+        "exterior"
+      ],
+      "related_ids": [
+        "DEMO-RQT-017",
+        "DEMO-DR-029",
+        "DEMO-RQT-037"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-017",
+      "type": "Requirement",
+      "title": "Ground attachment",
+      "collection": "Grounding",
+      "priority": "Primary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 05 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Ground attachments need a clean, controlled joint.",
+      "rule_text": "A ground joint must have a bare-metal contact surface, a tightening torque in the specified range (illustrative: 8 to 10 N·m) and protection against corrosion.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "EDS technical specialist",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "ground",
+        "attachment",
+        "joint",
+        "torque",
+        "bare",
+        "metal",
+        "corrosion",
+        "fastener"
+      ],
+      "keywords_es": [
+        "tierra",
+        "union",
+        "par",
+        "apriete",
+        "metal",
+        "desnudo",
+        "corrosion",
+        "sujetador"
+      ],
+      "related_ids": [
+        "DEMO-DR-011",
+        "DEMO-DR-029",
+        "DEMO-RQT-028"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-018",
+      "type": "Requirement",
+      "title": "Overcurrent device identification",
+      "collection": "Fuses and Circuit Protection",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 08 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Fuses and relays must be identified.",
+      "rule_text": "Each overcurrent device must show its rating and circuit with a marking that stays legible for the life of the vehicle.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "overcurrent",
+        "fuse",
+        "fuses",
+        "identification",
+        "marking",
+        "rating",
+        "label",
+        "circuit"
+      ],
+      "keywords_es": [
+        "sobrecorriente",
+        "fusible",
+        "fusibles",
+        "identificacion",
+        "marcado",
+        "capacidad",
+        "etiqueta",
+        "circuito"
+      ],
+      "related_ids": [
+        "DEMO-RQT-019",
+        "DEMO-RQT-038"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-019",
+      "type": "Requirement",
+      "title": "Overcurrent device accessibility",
+      "collection": "Fuses and Circuit Protection",
+      "priority": "Tertiary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 08 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Fuse boxes must be reachable.",
+      "rule_text": "Overcurrent devices must be reachable by a service technician without removing structural parts.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Team lead",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "overcurrent",
+        "fuse",
+        "accessibility",
+        "access",
+        "service",
+        "reach",
+        "box"
+      ],
+      "keywords_es": [
+        "sobrecorriente",
+        "fusible",
+        "accesibilidad",
+        "acceso",
+        "servicio",
+        "alcance",
+        "caja"
+      ],
+      "related_ids": [
+        "DEMO-RQT-018"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-020",
+      "type": "Requirement",
+      "title": "Wire sizing",
+      "collection": "Fuses and Circuit Protection",
+      "priority": "Primary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 08 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Wire gauge must match the circuit load.",
+      "rule_text": "Each conductor must be sized for its maximum current with a temperature margin and protected by a device rated no higher than the conductor.",
+      "deviation": {
+        "allowed": false,
+        "method": "No deviation permitted (safety or regulatory content). Ask the owner to change the requirement itself.",
+        "approver": "Requirement owner",
+        "evidence": "Not applicable"
+      },
+      "keywords_en": [
+        "wire",
+        "sizing",
+        "gauge",
+        "current",
+        "load",
+        "conductor",
+        "ampacity",
+        "size"
+      ],
+      "keywords_es": [
+        "calibre",
+        "cable",
+        "corriente",
+        "carga",
+        "conductor",
+        "amperaje",
+        "tamano"
+      ],
+      "related_ids": [
+        "DEMO-RQT-038",
+        "DEMO-RQT-018"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-021",
+      "type": "Requirement",
+      "title": "Splice protection by location",
+      "collection": "Splices and Terminals",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 07 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Splice protection depends on where the splice is located.",
+      "rule_text": "Splices in wet zones must be sealed. Splices in dry zones must be covered with tape or sleeve and must not be placed on a bend.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "splice",
+        "protection",
+        "location",
+        "wet",
+        "dry",
+        "sealed",
+        "tape",
+        "sleeve",
+        "bend"
+      ],
+      "keywords_es": [
+        "empalme",
+        "proteccion",
+        "ubicacion",
+        "humedo",
+        "seco",
+        "sellado",
+        "cinta",
+        "funda",
+        "curva"
+      ],
+      "related_ids": [
+        "DEMO-DR-015",
+        "DEMO-DR-020"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-022",
+      "type": "Requirement",
+      "title": "Connector insertion effort",
+      "collection": "Connectors and Sealing",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Mating force must allow manual assembly.",
+      "rule_text": "The force to mate a connector by hand must not exceed 75 N (illustrative). Above this, use a lever assist.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "connector",
+        "insertion",
+        "mating",
+        "effort",
+        "force",
+        "assist",
+        "lever",
+        "manual"
+      ],
+      "keywords_es": [
+        "conector",
+        "insercion",
+        "acoplamiento",
+        "esfuerzo",
+        "fuerza",
+        "palanca",
+        "manual"
+      ],
+      "related_ids": [
+        "DEMO-RQT-030",
+        "DEMO-RQT-015"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-023",
+      "type": "Requirement",
+      "title": "Fuse link length",
+      "collection": "Fuses and Circuit Protection",
+      "priority": "Tertiary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 08 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Fuse links have a minimum and maximum length.",
+      "rule_text": "A fuse link must be between 150 and 250 mm long (illustrative) so it can be installed and protected correctly.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Team lead",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "fuse",
+        "link",
+        "length",
+        "fusible",
+        "wire"
+      ],
+      "keywords_es": [
+        "fusible",
+        "link",
+        "eslabon",
+        "longitud",
+        "cable"
+      ],
+      "related_ids": [
+        "DEMO-RQT-020",
+        "DEMO-RQT-038"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-024",
+      "type": "Requirement",
+      "title": "Strain relief for connectors with fewer circuits",
+      "collection": "Connectors and Sealing",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Connectors under 30 circuits need basic strain relief.",
+      "rule_text": "Use a strain relief or tape routing that keeps the first bend at least 30 mm (illustrative) from the connector back.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "strain",
+        "relief",
+        "connector",
+        "fewer",
+        "circuits",
+        "small",
+        "backshell",
+        "bend"
+      ],
+      "keywords_es": [
+        "alivio",
+        "tension",
+        "conector",
+        "pocos",
+        "circuitos",
+        "tapa",
+        "trasera",
+        "curva"
+      ],
+      "related_ids": [
+        "DEMO-RQT-025",
+        "DEMO-DR-016"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-025",
+      "type": "Requirement",
+      "title": "Strain relief for connectors with many circuits",
+      "collection": "Connectors and Sealing",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Connectors with 30 or more circuits need a backshell.",
+      "rule_text": "Connectors with 30 circuits or more require a rigid strain-relief backshell and a first bend no closer than 50 mm (illustrative).",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "strain",
+        "relief",
+        "backshell",
+        "connector",
+        "many",
+        "circuits",
+        "30",
+        "large"
+      ],
+      "keywords_es": [
+        "alivio",
+        "tension",
+        "tapa",
+        "trasera",
+        "conector",
+        "muchos",
+        "circuitos",
+        "30",
+        "grande"
+      ],
+      "related_ids": [
+        "DEMO-RQT-024",
+        "DEMO-DR-016"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-026",
+      "type": "Requirement",
+      "title": "Shield termination",
+      "collection": "High Voltage and Shielding",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 10 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Shields must be terminated around 360 degrees.",
+      "rule_text": "A cable shield must be terminated with full circumferential contact to the connector shell or ground. Pigtail terminations are not accepted.",
+      "deviation": {
+        "allowed": false,
+        "method": "No deviation permitted (safety or regulatory content). Ask the owner to change the requirement itself.",
+        "approver": "Requirement owner",
+        "evidence": "Not applicable"
+      },
+      "keywords_en": [
+        "shield",
+        "shielding",
+        "termination",
+        "ground",
+        "360",
+        "circumferential",
+        "pigtail",
+        "emi"
+      ],
+      "keywords_es": [
+        "blindaje",
+        "malla",
+        "terminacion",
+        "tierra",
+        "360",
+        "circunferencial",
+        "emi"
+      ],
+      "related_ids": [
+        "DEMO-DR-014",
+        "DEMO-RQT-039"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-027",
+      "type": "Requirement",
+      "title": "Minimum hole size for wire pass-through",
+      "collection": "Grommets and Holes",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 04 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Panel holes must be large enough for the harness.",
+      "rule_text": "A pass-through hole must be sized for the largest cross-section that crosses it plus a 3 mm margin (illustrative), including any connector that must pass.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "hole",
+        "size",
+        "minimum",
+        "pass-through",
+        "diameter",
+        "panel",
+        "connector",
+        "cross-section"
+      ],
+      "keywords_es": [
+        "orificio",
+        "tamano",
+        "minimo",
+        "paso",
+        "diametro",
+        "panel",
+        "conector",
+        "seccion"
+      ],
+      "related_ids": [
+        "DEMO-RQT-004",
+        "DEMO-RQT-005",
+        "DEMO-DR-008"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-028",
+      "type": "Requirement",
+      "title": "Ground eyelet clearance to bundles (requirement)",
+      "collection": "Grounding",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 05 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Ground eyelets need a minimum clearance to bundles.",
+      "rule_text": "The distance between a ground eyelet and the nearest bundle must be at least 12 mm (illustrative), reduced to 6 mm if the installation sequence protects the bundle.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "ground",
+        "eyelet",
+        "clearance",
+        "bundle",
+        "minimum",
+        "sequence"
+      ],
+      "keywords_es": [
+        "tierra",
+        "ojillo",
+        "holgura",
+        "mazo",
+        "minimo",
+        "secuencia"
+      ],
+      "related_ids": [
+        "DEMO-DR-011",
+        "DEMO-RQT-017"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-029",
+      "type": "Requirement",
+      "title": "Battery cable clearance",
+      "collection": "Routing and Clearance",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Battery cables need extra clearance.",
+      "rule_text": "Keep battery cables at least 30 mm (illustrative) from sharp edges, moving parts and heat sources, and protect them with an additional sleeve.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "battery",
+        "cable",
+        "clearance",
+        "power",
+        "positive",
+        "negative",
+        "sleeve"
+      ],
+      "keywords_es": [
+        "bateria",
+        "cable",
+        "holgura",
+        "potencia",
+        "positivo",
+        "negativo",
+        "funda"
+      ],
+      "related_ids": [
+        "DEMO-RQT-007",
+        "DEMO-RQT-031",
+        "DEMO-RQT-001"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-030",
+      "type": "Requirement",
+      "title": "Access clearance for lever-lock connectors",
+      "collection": "Connectors and Sealing",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Leave room to operate lever-lock connectors.",
+      "rule_text": "Provide at least 25 mm (illustrative) of free space around a lever-lock connector so the lever can be moved fully by hand.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "lever",
+        "lock",
+        "connector",
+        "access",
+        "clearance",
+        "assembly",
+        "space",
+        "hand"
+      ],
+      "keywords_es": [
+        "conector",
+        "palanca",
+        "acceso",
+        "holgura",
+        "ensamble",
+        "espacio",
+        "mano"
+      ],
+      "related_ids": [
+        "DEMO-RQT-022",
+        "DEMO-RQT-013"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-031",
+      "type": "Requirement",
+      "title": "Harness clearance to sharp edges",
+      "collection": "Protection and Edges",
+      "priority": "Primary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 02 (EDS Engineering)",
+      "revision": "A",
+      "summary": "The harness must keep clearance to unprotected sharp edges.",
+      "rule_text": "An unprotected harness must keep at least 10 mm (illustrative) clearance to any sharp edge through the whole tolerance and vibration range. If this cannot be met, protect the contact zone with corrugated tubing or an edge protector.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "EDS technical specialist",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "harness",
+        "clearance",
+        "sharp",
+        "edge",
+        "edges",
+        "unprotected",
+        "tolerance",
+        "vibration",
+        "protector"
+      ],
+      "keywords_es": [
+        "arnes",
+        "holgura",
+        "borde",
+        "bordes",
+        "filoso",
+        "filosos",
+        "sin",
+        "proteccion",
+        "tolerancia",
+        "vibracion",
+        "protector"
+      ],
+      "related_ids": [
+        "DEMO-DR-007",
+        "DEMO-DR-024",
+        "DEMO-DR-006"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-032",
+      "type": "Requirement",
+      "title": "Clip pull-out force minimum",
+      "collection": "Retention and Clips",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Clips must resist a minimum pull-out force.",
+      "rule_text": "A clip pressed into a panel must withstand a pull-out force of at least 50 N (illustrative).",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "clip",
+        "clips",
+        "pull-out",
+        "force",
+        "panel",
+        "retention",
+        "minimum",
+        "push"
+      ],
+      "keywords_es": [
+        "clip",
+        "clips",
+        "extraccion",
+        "fuerza",
+        "panel",
+        "retencion",
+        "minimo"
+      ],
+      "related_ids": [
+        "DEMO-DR-001",
+        "DEMO-RQT-012",
+        "DEMO-RQT-011"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-033",
+      "type": "Requirement",
+      "title": "Clip material temperature rating",
+      "collection": "Retention and Clips",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 01 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Clip material must match the zone temperature.",
+      "rule_text": "Clips in zones above 100 °C (illustrative) must be made of a material rated for that temperature. Standard nylon is not allowed there.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "clip",
+        "clips",
+        "material",
+        "temperature",
+        "rating",
+        "nylon",
+        "heat",
+        "zone"
+      ],
+      "keywords_es": [
+        "clip",
+        "clips",
+        "material",
+        "temperatura",
+        "clasificacion",
+        "nailon",
+        "calor",
+        "zona"
+      ],
+      "related_ids": [
+        "DEMO-RQT-007",
+        "DEMO-DR-001"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-034",
+      "type": "Requirement",
+      "title": "Clearance to steering components",
+      "collection": "Routing and Clearance",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 03 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Keep the harness away from steering motion.",
+      "rule_text": "Maintain at least 25 mm (illustrative) between the harness and rotating steering parts across the full steering lock.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "steering",
+        "clearance",
+        "rotating",
+        "column",
+        "shaft",
+        "lock",
+        "harness"
+      ],
+      "keywords_es": [
+        "direccion",
+        "holgura",
+        "giratorio",
+        "columna",
+        "eje",
+        "volante",
+        "arnes"
+      ],
+      "related_ids": [
+        "DEMO-RQT-001",
+        "DEMO-DR-026"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-035",
+      "type": "Requirement",
+      "title": "Clearance to exhaust heat sources",
+      "collection": "Heat and Environment",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 09 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Keep minimum distance to heat sources.",
+      "rule_text": "Maintain at least 50 mm (illustrative) to exhaust components and 30 mm to engine manifolds, unless a verified heat shield is used.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "heat",
+        "source",
+        "exhaust",
+        "manifold",
+        "turbo",
+        "clearance",
+        "shield",
+        "distance"
+      ],
+      "keywords_es": [
+        "fuente",
+        "calor",
+        "escape",
+        "multiple",
+        "turbo",
+        "holgura",
+        "escudo",
+        "distancia"
+      ],
+      "related_ids": [
+        "DEMO-DR-027",
+        "DEMO-RQT-007"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-036",
+      "type": "Requirement",
+      "title": "Grommet sealing performance",
+      "collection": "Grommets and Holes",
+      "priority": "Tertiary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 04 (EDS Engineering)",
+      "revision": "A",
+      "summary": "An installed grommet must pass a water leak test.",
+      "rule_text": "An installed grommet must show no water leak after the standard spray test (illustrative: 5 minutes).",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Team lead",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "grommet",
+        "sealing",
+        "leak",
+        "water",
+        "test",
+        "spray",
+        "performance",
+        "installed"
+      ],
+      "keywords_es": [
+        "grommet",
+        "sellado",
+        "fuga",
+        "agua",
+        "prueba",
+        "rocio",
+        "desempeno",
+        "instalado"
+      ],
+      "related_ids": [
+        "DEMO-DR-008",
+        "DEMO-RQT-010"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-037",
+      "type": "Requirement",
+      "title": "Ground resistance maximum",
+      "collection": "Grounding",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 05 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Ground joints must stay below a resistance limit.",
+      "rule_text": "The resistance of a ground joint must not exceed 2 milliohm (illustrative) after environmental aging.",
+      "deviation": {
+        "allowed": false,
+        "method": "No deviation permitted (safety or regulatory content). Ask the owner to change the requirement itself.",
+        "approver": "Requirement owner",
+        "evidence": "Not applicable"
+      },
+      "keywords_en": [
+        "ground",
+        "resistance",
+        "joint",
+        "maximum",
+        "milliohm",
+        "aging",
+        "voltage",
+        "drop"
+      ],
+      "keywords_es": [
+        "tierra",
+        "resistencia",
+        "union",
+        "maximo",
+        "miliohm",
+        "envejecimiento",
+        "caida",
+        "voltaje"
+      ],
+      "related_ids": [
+        "DEMO-RQT-016",
+        "DEMO-RQT-017"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-038",
+      "type": "Requirement",
+      "title": "Fuse rating versus wire gauge",
+      "collection": "Fuses and Circuit Protection",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 08 (EDS Engineering)",
+      "revision": "A",
+      "summary": "The fuse must protect the wire.",
+      "rule_text": "The rating of a fuse must be lower than the continuous current capacity of the protected wire, according to the sizing table (illustrative).",
+      "deviation": {
+        "allowed": false,
+        "method": "No deviation permitted (safety or regulatory content). Ask the owner to change the requirement itself.",
+        "approver": "Requirement owner",
+        "evidence": "Not applicable"
+      },
+      "keywords_en": [
+        "fuse",
+        "rating",
+        "wire",
+        "gauge",
+        "protect",
+        "ampacity",
+        "sizing",
+        "table"
+      ],
+      "keywords_es": [
+        "fusible",
+        "capacidad",
+        "calibre",
+        "cable",
+        "proteger",
+        "amperaje",
+        "tabla"
+      ],
+      "related_ids": [
+        "DEMO-RQT-020",
+        "DEMO-RQT-018",
+        "DEMO-RQT-023"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-039",
+      "type": "Requirement",
+      "title": "High-voltage separation from low-voltage circuits",
+      "collection": "High Voltage and Shielding",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 10 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Keep HV cables apart from LV circuits.",
+      "rule_text": "High-voltage cables must be routed at least 50 mm (illustrative) from low-voltage bundles or share a rigid barrier with them.",
+      "deviation": {
+        "allowed": false,
+        "method": "No deviation permitted (safety or regulatory content). Ask the owner to change the requirement itself.",
+        "approver": "Requirement owner",
+        "evidence": "Not applicable"
+      },
+      "keywords_en": [
+        "high",
+        "voltage",
+        "HV",
+        "low",
+        "voltage",
+        "LV",
+        "separation",
+        "cable",
+        "routing",
+        "barrier",
+        "distance"
+      ],
+      "keywords_es": [
+        "alto",
+        "voltaje",
+        "HV",
+        "bajo",
+        "voltaje",
+        "LV",
+        "separacion",
+        "cable",
+        "ruteo",
+        "barrera",
+        "distancia"
+      ],
+      "related_ids": [
+        "DEMO-DR-014",
+        "DEMO-RQT-026"
+      ]
+    },
+    {
+      "id": "DEMO-RQT-040",
+      "type": "Requirement",
+      "title": "Connector lock verification",
+      "collection": "Connectors and Sealing",
+      "priority": "Secondary",
+      "requirement_level": "Mandatory (shall)",
+      "precedence": 1,
+      "author": "Demo Author 06 (EDS Engineering)",
+      "revision": "A",
+      "summary": "Connectors must show whether they are locked.",
+      "rule_text": "Connectors must have a positive latch or an indicator that confirms full engagement and is visible after installation.",
+      "deviation": {
+        "allowed": true,
+        "method": "Submit a deviation request to the requirement owner with engineering justification and risk assessment. The deviation is recorded for the program and has an expiration date.",
+        "approver": "Design supervisor",
+        "evidence": "Test result or CAD analysis that shows equivalent performance"
+      },
+      "keywords_en": [
+        "connector",
+        "lock",
+        "latch",
+        "indicator",
+        "CPA",
+        "verification",
+        "mated",
+        "engagement",
+        "visible"
+      ],
+      "keywords_es": [
+        "conector",
+        "seguro",
+        "pestana",
+        "indicador",
+        "CPA",
+        "verificacion",
+        "acoplado",
+        "enganche",
+        "visible"
+      ],
+      "related_ids": [
+        "DEMO-RQT-022",
+        "DEMO-RQT-015",
+        "DEMO-RQT-030"
+      ]
+    }
+  ]
+}
